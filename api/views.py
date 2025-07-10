@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 from api.models import ApiUser, Warehouse, Good, Inventory
 from api.serializers import UserSerializer, WarehouseSerializer, GoodSerializer, InventorySerializer, SupplySerializer, WithdrawSerializer
-from api.permissions import IsConsumer, IsProvider, IsSuperuser
+from api.permissions import IsConsumer, IsProvider
 
 class UserModelViewSet(viewsets.ModelViewSet):
     queryset = ApiUser.objects.all()
